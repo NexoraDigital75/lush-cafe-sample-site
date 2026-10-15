@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#14241f">
+<title>Lush Cafe | By The Lake — Sample Website</title>
+<meta name="description" content="A sample website concept for Lush Cafe | By The Lake, Madhapur, Hyderabad.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1c2823;--pine:#183b30;--moss:#70836a;--cream:#f6f1e7;--paper:#fffdf8;--clay:#c66e48;--line:#ddd8cb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif}a{color:inherit}.wrap{width:min(1180px,92%);margin:auto}
+nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;gap:18px}.brand{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:700}.brand span{display:block;font-size:10px;letter-spacing:.26em;color:var(--moss);margin-top:4px}.navlinks{display:flex;gap:25px;font-size:13px}.navlinks a{text-decoration:none}.navlinks a:hover{color:var(--clay)}
+.hero{display:grid;grid-template-columns:1.02fr .98fr;min-height:560px;background:var(--pine);color:#fffdf8;overflow:hidden}.hero-copy{padding:clamp(36px,6vw,78px);display:flex;flex-direction:column;align-items:flex-start;justify-content:center}.eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#d8c6a5;font-weight:700}.hero h1{font:600 clamp(42px,5.4vw,72px)/1.02 "Playfair Display",serif;letter-spacing:-.04em;margin:18px 0}.hero p{line-height:1.8;color:#e1e7df;max-width:430px;font-size:15px}.actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:22px}.btn{padding:13px 18px;text-decoration:none;font-size:12px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;border:1px solid #f6f1e7}.btn.primary{background:var(--cream);color:var(--pine)}.btn.ghost{color:#fff}.hero-image{min-height:400px;position:relative;background:#344c3d}.hero-image img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.hero-image:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(24,59,48,.2),transparent 55%)}
+.note{font-size:11px;color:#7c8178;margin:12px 0 0}.ticker{background:#d9dfd0;padding:14px 0;text-align:center;font-size:11px;letter-spacing:.17em;text-transform:uppercase;color:#30483b}
+.section{padding:82px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:30px}.kicker{font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:var(--clay);font-weight:700}.section h2{font:600 clamp(32px,4vw,48px)/1.08 "Playfair Display",serif;margin:10px 0 0;letter-spacing:-.025em}.section-intro{max-width:420px;color:#626b61;line-height:1.75;font-size:14px}
+.menu-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.dish{background:var(--paper);border:1px solid var(--line);overflow:hidden}.dish img{display:block;width:100%;height:225px;object-fit:contain;background:#e5e0d5}.dish-body{padding:17px}.dish h3{font:600 19px/1.2 "Playfair Display",serif;margin:0 0 9px}.dish p{font-size:12px;line-height:1.6;color:#74796f;margin:0;min-height:38px}.price{font-weight:700;font-size:14px;margin-top:15px;color:var(--pine)}.menu-foot{margin-top:20px;display:flex;justify-content:space-between;align-items:center;gap:18px;border-top:1px solid var(--line);padding-top:20px;font-size:12px;color:#676e64}.menu-link{display:inline-block;background:var(--pine);color:white;padding:13px 17px;text-decoration:none;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center;background:#e7e8dc}.story-image{display:grid;grid-template-columns:1fr 1fr;gap:12px}.story-image img{width:100%;height:260px;object-fit:cover}.story-image img:nth-child(2){margin-top:34px}.story-copy{padding:30px 0}.story-copy p{color:#5c665d;line-height:1.85;font-size:14px;max-width:470px}.gallery{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:210px 210px;gap:12px}.gallery img{width:100%;height:100%;object-fit:cover;background:#e5e0d5;display:block}.gallery img:first-child{grid-row:span 2}.visit{background:var(--pine);color:#fffdf8}.visit .section-intro{color:#d4ddd4}.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}.visit-card{border-top:1px solid #557064;padding-top:20px}.visit-card h3{font:600 23px "Playfair Display",serif;margin:0 0 12px}.visit-card p{color:#d8e0d7;font-size:14px;line-height:1.8}.visit-card a{color:#f0d6b4}.footer{padding:25px 0;background:#10271f;color:#cbd6cc;font-size:11px}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.fine{font-size:10px;line-height:1.6;color:#737a70;margin-top:20px}
+@media(max-width:850px){.hero{grid-template-columns:1fr}.hero-image{min-height:340px;order:-1}.hero-copy{padding:40px 7%}.menu-grid{grid-template-columns:repeat(2,1fr)}.story{grid-template-columns:1fr;gap:20px}.story-copy{padding:0}.section{padding:60px 0}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:180px 180px 180px}.gallery img:first-child{grid-row:auto;grid-column:span 2}.visit-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.navlinks{gap:12px;font-size:11px}.brand{font-size:11px}.hero-image{min-height:280px}.menu-grid{gap:10px}.dish img{height:155px}.dish-body{padding:12px}.dish h3{font-size:17px}.dish p{font-size:11px}.price{font-size:13px}.section-head{display:block}.section-intro{margin-top:14px}.story-image img{height:200px}.gallery{grid-template-rows:145px 145px 145px}.visit-grid{grid-template-columns:1fr}.ticker{font-size:9px}.menu-foot{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <a class="brand" href="#top" style="text-decoration:none">LUSH CAFE <span>BY THE LAKE</span></a>
+  <div class="navlinks"><a href="#menu">Menu</a><a href="#story">Our space</a><a href="#gallery">Gallery</a><a href="#visit">Find us</a></div>
+</nav>
+</div>
+<main id="top">
+<section class="wrap hero">
+  <div class="hero-copy">
+    <div class="eyebrow">Madhapur · Hyderabad</div>
+    <h1>A little escape<br>from the everyday.</h1>
+    <p>A rooftop oasis for long conversations, comfort food and unhurried coffee. Come for the view; stay for one more bite.</p>
+    <div class="actions"><a class="btn primary" href="#menu">Explore the menu</a><a class="btn ghost" href="#visit">Plan your visit</a></div>
+    <div class="note" style="color:#c9d5ca">Independent sample website concept by NexoraDigital</div>
+  </div>
+  <div class="hero-image"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=85" alt="Warm restaurant interior" fetchpriority="high"></div>
+</section>
+<div class="ticker">Coffee · Comfort plates · Rooftop evenings · Good company</div>
+
+<section class="wrap section" id="menu">
+  <div class="section-head"><div><div class="kicker">From the menu</div><h2>Familiar favourites,<br>with a Lush twist.</h2></div><p class="section-intro">A selection based on the menu highlights visible in the Google screenshots provided. Prices are reproduced from those screenshots; please reconfirm before publishing.</p></div>
+  <div class="menu-grid">
+    <article class="dish"><img src="images/truffle-mushroom.jpg" alt="Lush Cafe Google menu photo: Truffle Scented Mushroom" loading="lazy"><div class="dish-body"><h3>Truffle Scented Mushroom…</h3><p>Menu highlight shown on Google. Full item name should be confirmed.</p><div class="price">₹349</div></div></article>
+    <article class="dish"><img src="images/chilli-paneer.jpg" alt="Lush Cafe Google menu photo: Chilli Paneer" loading="lazy"><div class="dish-body"><h3>Chilli Paneer</h3><p>A popular menu highlight from the provided listing.</p><div class="price">₹389</div></div></article>
+    <article class="dish"><img src="images/burnt-garlic-rice.jpg" alt="Lush Cafe Google menu photo: Burnt Garlic Shrimp Fried Rice" loading="lazy"><div class="dish-body"><h3>Burnt Garlic Shrimp Fried Rice</h3><p>Menu highlight shown on Google; image is illustrative.</p><div class="price">₹459</div></div></article>
+    <article class="dish"><img src="images/chicken-skewers.jpg" alt="Lush Cafe Google menu photo: Lush Special Chicken Skewers" loading="lazy"><div class="dish-body"><h3>Lush Special Chicken Skewers</h3><p>A menu highlight from the provided listing; photo illustrative.</p><div class="price">₹429</div></div></article>
+  </div>
+  <div class="menu-foot"><span>Menu names and prices transcribed from the screenshots supplied by the client; details may change.</span><a class="menu-link" href="https://www.google.com/search?q=Lush+Cafe+By+The+Lake+Madhapur+menu" target="_blank" rel="noopener">View current menu</a></div>
+</section>
+
+<section class="story" id="story"><div class="wrap" style="display:contents">
+  <div class="story-image"><img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=800&q=80" alt="Cosy cafe dining area" loading="lazy"><img src="https://images.unsplash.com/photo-1493854927394-b3b5c7b8d0d7?auto=format&fit=crop&w=800&q=80" alt="Cafe table and coffee" loading="lazy"></div>
+  <div class="story-copy"><div class="kicker">The Lush mood</div><h2 style="font:600 clamp(32px,4vw,48px)/1.08 'Playfair Display',serif;margin:10px 0 18px">Made for lingering.</h2><p>Think easy evenings, a table full of shared plates and a coffee that turns into a conversation. This concept keeps the mood warm and relaxed while giving the café’s food and setting room to shine.</p><p class="fine">This paragraph is proposed brand copy for the demo, not a verified statement from the café.</p></div>
+</div></section>
+
+<section class="wrap section" id="gallery">
+  <div class="section-head"><div><div class="kicker">A peek inside</div><h2>Settle into the scene.</h2></div><p class="section-intro">The gallery uses temporary editorial imagery. Replace these with the café’s own photos before presenting this as a factual photo gallery.</p></div>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85" alt="Restaurant interior" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Coffee being prepared" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80" alt="Restaurant table setting" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80" alt="Cafe seating" loading="lazy">
+    <img src="images/cafe-ambience-placeholder.svg" alt="Cafe ambience placeholder illustration" loading="lazy">
+  </div>
+</section>
+
+<section class="visit section" id="visit"><div class="wrap">
+  <div class="section-head"><div><div class="kicker" style="color:#e7b08e">Come by</div><h2>Meet you at Lush.</h2></div><p class="section-intro">Lush Cafe | By The Lake is listed in Madhapur, Hyderabad. Confirm the exact address and opening hours with the business before publishing.</p></div>
+  <div class="visit-grid">
+    <div class="visit-card"><h3>Find the café</h3><p>Lush Cafe By The Lake<br>Madhapur, Hyderabad, Telangana</p><a href="https://www.google.com/maps/search/?api=1&query=Lush+Cafe+By+The+Lake+Madhapur+Hyderabad" target="_blank" rel="noopener">Open Google Maps ↗</a></div>
+    <div class="visit-card"><h3>Menu & reservations</h3><p>The Instagram result visible in your screenshot lists the handle <strong>@lushcafehyd</strong> and the reservation number <strong>9676 83 23 23</strong>. Please confirm these details before using them publicly.</p><a href="https://www.instagram.com/lushcafehyd/" target="_blank" rel="noopener">Instagram @lushcafehyd ↗</a></div>
+  </div>
+  <p class="fine" style="color:#b9c7ba">Demo note: sample site by NexoraDigital. Food and ambience photos are illustrative stock images, not verified photos of Lush Cafe. For a client-ready version, replace them with the café's own Google/Instagram photos with permission and verify menu, prices, address, hours and contact information.</p>
+</div></section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><span>LUSH CAFE | BY THE LAKE — WEBSITE CONCEPT</span><span>Designed by NexoraDigital</span><span><a href="#top" style="text-decoration:none">Back to top ↑</a></span></div></footer>
+</body>
+</html>
